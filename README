@@ -1,1 +1,21 @@
 NAME:P.SUDHARMA
+
+COMPANY:CODE ALPHA
+
+ID:CA/03/41477
+
+DOMAIN:WEB DEVELOPMENT
+
+DURATION:OCTOBER 1.10.2024-31.10.2024
+
+TASK-2(Image Gallery) Overview of the project:-
+    It is a image gallery to show various images
+HTML:-
+    This HTML creates an interactive image gallery with a main display image and clickable thumbnail images, where clicking a thumbnail updates the main image. 
+CSS:-
+    This CSS styles the image gallery with a vertical layout, rounded images, and a gradient background. Thumbnails have hover effects (scaling and rotating), and the active thumbnail gets a border and rotation.
+JAVASCRIPT:-
+    This JavaScript function updates the main image's source (src) to the clicked thumbnail's imageSrc, and adds an "active" class to the selected thumbnail while removing it from others. It highlights the current thumbnail by toggling the "active" class.
+
+
+
