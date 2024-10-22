@@ -1,304 +1,106 @@
 HTML:
-   <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio website">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home" class="section">
+    <div class="container">
         
-        <img src="main.jpg" alt="sudharma" height="200px" width="200px" style="border-radius: 100px;">
-        
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi,I am Sudharma, a Budding Front-End Developer</p>
-    </section>
-
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I am persuing my undergraduate degree at Dr.Mahalingam College of Engineering And Technology and I have complete four projects</p>
-    </section>
-    <section id="resume" class="section">
-        <h2>My Resume</h2>
-        <button id="downloadResume" class="download-btn">Download My Resume</button>
-         <div class="accordion">
-            <h3 class="accordion-header">INTERESTS</h3>
-            <div class="accordion-content">
-                <p>1.Designing a webpage</p>
-                <p>2.Drawing</p>
+          <center>
+            <div class="image">
+            <img id="First-image" src="ma.avif" alt="Image Gallery">
             </div>
-            <h3 class="accordion-header">SKILLS</h3>
-            <div class="accordion-content">
-                <p>1.Communication Skills</p>
-                <p>2.LeaderShip Skills</p>
-                <p>3.Analytical Skills</p>
-            </div>
-
-            <h3 class="accordion-header">EDUCATION</h3>
-            <div class="accordion-content">
-                <p>Persuing,Bachelor of Science in Computer Science,Dr.Mahalingam College Of Enginnering And Technology (2nd year)</p>
-                <p>Objective is to Become a Professional Web Developer</p>
-            </div>
-
-            <h3 class="accordion-header">PROJECTS</h3>
-            <div class="accordion-content">
-                <p>1.HTML,CSS:Created a Website for Bakery Named "HEAVENLY DELIGHTS"</p>
-                <p>2.HTML,CSS,JAVACRIPT:Created Simple Calculator</p>
-                <p>3.HTML,CSS,JAVASCRIPT:Created Image Gallery</p>
-                <p>4.HTML,CSS,JAVASCRIPT:Created MY PORTFOLIO</p>
-            </div>
-            <h3 class="accordion-header">COURSES</h3>
-            <div class="accordion-content">
-                <p>Front-End delopment by codetech and by Mayuran Academy</p>
-                </div>
-                <h3 class="accordion-header">CERTIFICATIONS</h3>
-            <div class="accordion-content">
-                <p>1.linguaskill</p>
-                <p>2.ICT youth talk(regional prefinals)</p>
-                </div>
-                <h3 class="accordion-header">LINKDIN</h3>
-            <div class="accordion-content">
-                <p>https://www.linkedin.com/in/sudharma-p-24455a2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</p>
+            </center>
+        <div class="natures">
+            <img src="1.avif" alt="1" onclick="changeImage('1.avif')">
+            <img src="12.avif" alt="food 2" onclick="changeImage('12.avif')">
+            <img src="2.avif" alt="food 3" onclick="changeImage('2.avif')">
+            <img src="11.avif" alt="food 4" onclick="changeImage('11.avif')">
+            <img src="3.avif" alt="food 5" onclick="changeImage('3.avif')">
+            <img src="11.webp" alt="food 6" onclick="changeImage('11.webp')">
+            <img src="4.avif" alt="food 7" onclick="changeImage('4.avif')">
+            <img src="10.avif" alt="food 8" onclick="changeImage('10.avif')">
+            <img src="5.avif" alt="food 9" onclick="changeImage('5.avif')">
+            <img src="9.avif" alt="food 7" onclick="changeImage('9.avif')">
+            <img src="6.avif" alt="food 8" onclick="changeImage('6.avif')">
+            <img src="7.avif" alt="food 8" onclick="changeImage('7.avif')">
+            <img src="8.avif" alt="food 9" onclick="changeImage('8.avif')">
+            <img src="13.avif" alt="food 7" onclick="changeImage('13.avif')">
+            <img src="14.avif" alt="food 8" onclick="changeImage('14.avif')">
+           
         </div>
-        <h3 class="accordion-header">GITHUB</h3>
-            <div class="accordion-content">
-                <p>https://github.com/Sudharmap/CodeAlpha</p>
-        </div>
-        </div>
-    </section>
-
-    
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-        <div id="formResponse"></div>
-    </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
 
 CSS:
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background:linear-gradient(rgb(239, 194, 238),rgb(187, 245, 236),rgb(203, 241, 160),rgb(246, 193, 193));
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:linear-gradient(rgb(239, 194, 238),rgb(187, 245, 236),rgb(203, 241, 160),rgb(246, 193, 193));
+  padding: 20px;
+  border-radius: 10px;
+
+  }
+
+.image img{
+  max-width: 100%;
+  height: 350px;
+  width:350px;
+  border-radius: 50%;
+}
+.natures{
+  display: flex;
+  margin-top: 10px;
 }
 
-header nav ul {
-    list-style: none;
+.natures img {
+  width: 75px;
+  height: 75px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  border-radius: 50%;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+.natures img:hover {
+  transform: scale(1.1);
+  transform: rotateY(180deg);
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.natures img.active {
+  border: 2px solid #b5e1fe;
+  transform: rotateY(180deg);
 }
 
-.section {
-    padding: 50px;
-    text-align: center;
+javascript:
+function changeImage(imageSrc) {
+  const currentImage= document.getElementById('First-image');
+  currentImage.src = imageSrc;
+  const natures = document.querySelectorAll('.natures img');
+  natures.forEach(nature => {
+      nature.classList.remove('active');
+      if (nature.src.includes(imageSrc)) {
+          nature.classList.add('active');
+      }
+  });
 }
-
-#home {
-    background-color: #f4f4f4;
-    
-}
-
-#about {
-    background-color: #e2e2e2;
-}
-
-#resume {
-    background-color: #ccc;
-}
-
-.accordion {
-    text-align: left;
-    width: 50%;
-    margin: 0 auto;
-}
-
-.accordion-header {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    transition: background-color 0.3s ease;
-}
-
-.accordion-header:hover {
-    background-color: #555;
-}
-
-.accordion-content {
-    background-color: #f1f1f1;
-    display: none;
-    overflow: hidden;
-    padding: 15px;
-}
-
-.accordion-content p {
-    margin: 5px 0;
-}
-
-#contact {
-    background-color: #eee;
-}
-
-form {
-    display: inline-block;
-    text-align: left;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-
-.download-btn {
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-.download-btn:hover {
-    background-color: #555;
-}
-
-JAVASCRIPT:
-const headers = document.querySelectorAll('.accordion-header');
-
-headers.forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
-        if (content.style.display === 'block') {
-            content.style.display = 'none';
-        } else {
-            content.style.display = 'block';
-        }
-    });
-});
-
-
-document.getElementById('downloadResume').addEventListener('click', function() {
-    const resumeContent = `
-        My Resume:
-            INTERESTS:
-                1.Designing a webpage
-                2.Drawing
-            SKILLS:
-                1.Communication Skills
-                2.LeaderShip Skills
-                3.Analytical Skills
-            EDUCATION:
-                Persuing,Bachelor of Science in Computer Science,Dr.Mahalingam College Of Enginnering And Technology (2nd year)</p>
-                Objective is to Become a Professional Web Developer
-            PROJECTS:
-                1.HTML,CSS:Created a Website for Bakery Named "HEAVENLY DELIGHTS"
-                2.HTML,CSS,JAVACRIPT:Created Simple Calculator
-                3.HTML,CSS,JAVASCRIPT:Created Image Gallery
-                4.HTML,CSS,JAVASCRIPT:Created MY PORTFOLIO
-            COURSES:
-                Front-End delopment by codetech and by Mayuran Academy
-            CERTIFICATIONS:
-                 1.linguaskill
-                 2.ICT youth talk(regional prefinals)
-                
-            LINKDIN:
-            
-                https://www.linkedin.com/in/sudharma-p-24455a2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-            GITHUB:
-                https://www.linkedin.com/in/sudharma-p-24455a2a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
-    
-    `;
-
-   
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'resume.txt'; 
-    document.body.appendChild(a);
-    a.click();
-
-   
-    document.body.removeChild(a);
-});
-
